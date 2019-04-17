@@ -28,6 +28,7 @@ import (
 )
 
 func main() {
+	defer profile.Start().Stop()
 	if err := driver.PProf(&driver.Options{UI: newUI()}); err != nil {
 		fmt.Fprintf(os.Stderr, "pprof: %v\n", err)
 		os.Exit(2)
