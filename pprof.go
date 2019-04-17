@@ -24,6 +24,7 @@ import (
 
 	"github.com/chzyer/readline"
 	"github.com/google/pprof/driver"
+	"github.com/pkg/profile"
 )
 
 func main() {
